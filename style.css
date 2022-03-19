@@ -1,0 +1,194 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+	font-family: sans-serif;
+	color: #3D3D3D;
+
+}
+html{
+	/*background: url('moroccan-flower.png');*/
+}
+
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	width: 60%;
+}
+
+/*navbar START*/
+.header{
+	background-color: #3D3D3D;
+	width: 100%;
+    margin: 0 auto;
+}
+
+
+.nav{
+  	margin: 0 auto;
+  	padding: 30px 0;
+  	letter-spacing: 2.6px;
+  	text-align: center;
+}
+
+}
+.nav li a {
+	display: inline;
+  	text-decoration: none;
+ 	color: #F5F5F5;
+  	margin-right: 25px;
+  	
+}
+
+.nav li a:hover {
+  	background-color: #ffffff;
+  	transition: 0.6s;
+  	color:#3D3D3D;
+  	font-weight: 700;
+  	padding: 22px 12px;
+  	font-size: 22px;
+  	cursor: pointer;
+
+}
+
+.nav li{
+ 	display: inline;
+ 	text-decoration: none;
+ 	font-size: 22px;
+  	padding: 0px 30px;
+  	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+	color: #F5F5F5;
+}
+
+
+/*navbar END*/
+
+/*presentation START*/
+
+.presentation{
+	background-color: #ECE9E6;
+	width: 100%;
+    margin: 0 auto;
+}
+.flex{
+	display: inline-flex;
+	text-align: justify;
+}
+.flex-left{
+	margin-top: 15px;
+	flex-basis: 25%;
+	margin: 35px 5px 25px 60px;
+
+}
+.flex-right{
+	margin-top: 25px;
+	flex-basis: 75%;
+	margin: 10px 60px 30px 10px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+
+}
+.image{
+	width: 100%;
+	height: 100%;
+	max-width: 190px;
+	max-height: 220px;
+	height: 220px;
+	width: 185px;
+	min-width: 110px;
+	min-height: 92.5px;
+}
+.title{
+	text-align:	center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.description {
+	line-height: 1.5;
+}
+h1{
+	font-size: 36px;
+	text-align: left;
+}
+
+/*presentation END*/
+
+/*languageParagraph START*/
+
+.code{
+	width: 100%;
+    margin: 0 auto;
+    background-color: #ECE9E6;
+}
+
+h2{
+	font-size: 22px;
+	margin-bottom: 5px;
+	padding-top: 15px;
+	padding-left: 60px;
+}
+
+.languageParagraph{
+	line-height: 1.5;
+	padding: 0px 50px 30px 50px;
+	text-align: justify;
+	margin-right: 40px;
+	margin-left: 10px;
+}
+/*languageParagraph END*/
+
+/*code START*/
+
+.code{
+	width: 100%;
+    margin: 0 auto;
+    background-color: #ECE9E6;
+}
+.morePadding{
+	padding-top: 40px;
+}
+.colorB{
+	background-color:#F5F5F5;
+}
+
+/*code END*/
+
+.footer{
+	background-color: #ECE9E6;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.footer h3{
+	padding: 50px 0px 15px 0px;
+	text-align: center;
+
+}
+.footer p{
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	line-height: 1.5;
+	padding-bottom: 20px;
+	font-style: italic;
+}
+.icon{
+	text-align: center;
+	padding: 5px 0px 20px 0px;
+
+}
+
+
+/*Colores
+#3D3D3D - Color oscuro
+#ECE9E6 - Color intermedio
+#F5F5F5 - Color claro
+
+
+*/

@@ -1,206 +1,246 @@
-* { 
-	margin: 0; 
-	padding: 0; 
-	border: none; 
-	font-family: sans-serif;
-	color: #3D3D3D;
+/* BEGIN: GENERAL*/
 
-}
-html{
-	/*background: url('moroccan-flower.png');*/
+body {
+    font-family: 'Charis SIL', serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.wrapper{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0;
-	width: 80%;
-}
-
-/*navbar START*/
-.header{
-	background-color: #3D3D3D;
-	width: 100%;
-    margin: 0 auto;
+section {
+    height: 1400px;
+    background-color: white;
+    border: solid black 1px;
 }
 
 
-.nav{
-  	margin: 0 auto;
-  	padding: 30px 0;
-  	letter-spacing: 2.6px;
-  	text-align: center;
+/* END: GENERAL*/
+
+
+/* BEGIN: HEADER*/
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
 }
 
-}
-.nav li a {
-	display: inline;
-  	text-decoration: none;
- 	color: #F5F5F5;
-  	margin-right: 25px;
-  	
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
 }
 
-.nav li a:hover {
-  	background-color: #ffffff;
-  	transition: 0.6s;
-  	color:#3D3D3D;
-  	font-weight: 700;
-  	padding: 22px 12px;
-  	font-size: 22px;
-  	cursor: pointer;
-
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav li{
- 	display: inline;
- 	text-decoration: none;
- 	font-size: 22px;
-  	padding: 0px 30px;
-  	text-transform: uppercase;
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
 }
 
-a{
-	text-decoration: none;
-	color: #F5F5F5;
+li {
+    /*width: 200px;*/
+    text-decoration: none;
 }
 
-
-/*navbar END*/
-
-/*presentation START*/
-
-.presentation{
-	background-color: #ECE9E6;
-	width: 100%;
-    margin: 0 auto;
-}
-.flex{
-	display: flex;
-	text-align: justify;
-}
-.flex-left{
-
-
-}
-.flex-right{
-	margin-top: 25px;
-	flex-basis: 85%;
-	padding: 0px 60px 30px 0px;
-	overflow: hidden;
-	overflow-wrap: break-word;
-
-
-}
-.image{
-	width: 100%;
-	height: 100%;
-	max-width: 190px;
-	max-height: 220px;
-	height: 180px;
-	width: 145px;
-	min-width: 110px;
-	min-height: 92.5px;
-	float: left;
-	padding: 0px 20px 0px 65px;
-}
-.image:after{
-  content: "";
-  clear: both;
-  display: table;
+h1 {
+    font-size: 90px;
+    margin: 0;
 }
 
-}
-.title{
-	text-align:	center;
-	padding-top: 20px;
-
-
-}
-.description {
-	line-height: 1.5;
-	text-align:	justify;
-	padding: 0px 35px 30px 60px;
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
 }
 
-h1{
-	font-size: 36px;
-	text-align: center;
-	padding: 20px 0px 10px 0px;
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/*presentation END*/
-
-/*languageParagraph START*/
-
-.code{
-	width: 100%;
-    margin: 0 auto;
-    background-color: #ECE9E6;
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+    height: auto;
 }
 
-h2{
-	font-size: 22px;
-	margin-bottom: 5px;
-	padding-top: 15px;
-	padding-left: 60px;
+.button {
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
 }
 
-.languageParagraph{
-	line-height: 1.5;
-	padding: 0px 50px 30px 50px;
-	text-align: justify;
-	margin-right: 40px;
-	margin-left: 10px;
-}
-/*languageParagraph END*/
-
-/*code START*/
-
-.code{
-	width: 100%;
-    margin: 0 auto;
-    background-color: #ECE9E6;
-}
-.morePadding{
-	padding-top: 40px;
-}
-.colorB{
-	background-color:#F5F5F5;
+.button:hover {
+    background-color: #ef744b;
 }
 
-/*code END*/
-
-.footer{
-	background-color: #ECE9E6;
-	width: 100%;
-    margin: 0 auto;
+.button:active {
+    background-color: darkgray;
+    color: #808080;
 }
 
-.footer h3{
-	padding: 50px 0px 15px 0px;
-	text-align: center;
-
+.socialmedia {
+    padding-bottom: 200px;
 }
-.footer p{
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-	line-height: 1.5;
-	padding-bottom: 20px;
-	font-style: italic;
-}
-.icon{
-	text-align: center;
-	padding: 5px 0px 20px 0px;
 
+.logo {
+    height: 100px;
+    margin: 10px;
+}
+
+.social-icon {
+    margin: 10px;
 }
 
 
-/*Colores
-#3D3D3D - Color oscuro
-#ECE9E6 - Color intermedio
-#F5F5F5 - Color claro
+/* END: HEADER*/
 
 
-*/
+/* BEGIN: SUBSECTION*/
+
+.subsection {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+.profilepicture {
+    width: 300px;
+    height: 380px;
+    border-radius: 150px;
+}
+
+.headshot {
+    display: flex;
+    align-items: center;
+}
+
+
+/* END: SUBSECTION*/
+
+
+/* BEING: PROJECTS*/
+
+.project-unit {
+    width: 400px;
+    height: 600px;
+    box-shadow: 5px 5px 20px rgb(206, 202, 202);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.subsection2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.projectimage {
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projectlink {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* END: PROJECTS*/
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+
+/* BEGIN: HAMBURGER*/
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        display: block;
+        margin: 20px;
+        align-self: flex-end;
+        height: auto;
+    }
+    ul {
+        display: none;
+        margin: 0;
+        background-color: #2b2c38;
+    }
+    ul.show {
+        display: block;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        background-color: #2b2c38;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+
+/* END: HAMBURGER*/
+
+
+/* BEGIN: FOOTER*/
+
+footer {}
+
+
+/* END: FOOTER*/

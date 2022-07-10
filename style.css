@@ -9,9 +9,8 @@ body {
 }
 
 section {
-    height: 1400px;
+    height: auto;
     background-color: white;
-    border: solid black 1px;
 }
 
 
@@ -122,6 +121,10 @@ p {
     padding: 80px;
 }
 
+.personalinfo {
+    text-align: justify;
+}
+
 h2 {
     font-size: 60px;
 }
@@ -135,6 +138,7 @@ h2 {
 .headshot {
     display: flex;
     align-items: center;
+    margin-left: 5vw;
 }
 
 
@@ -167,11 +171,13 @@ h2 {
 .subtext {
     font-size: 15px;
     font-weight: 300;
+    padding: 0px 15px 5px 15px;
 }
 
 .projectimage {
     margin-top: 25px;
     width: 300px;
+    height: 250px;
     border-radius: 125px;
 }
 
@@ -239,8 +245,6 @@ a {
 
 
 /* BEGIN: FOOTER*/
-
-footer {}
 
 
 /* END: FOOTER*/

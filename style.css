@@ -72,7 +72,7 @@ p {
 .hero-text {
     margin-left: 80px;
     margin-bottom: 200px;
-    height: 300px;
+    height: auto;
 }
 
 .button {
@@ -130,8 +130,8 @@ h2 {
 }
 
 .profilepicture {
-    width: 15vw;
-    height: 35vh;
+    width: 220px;
+    height: 280px;
     border-radius: 150px;
 }
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="screenTop"><span id="screen">0</span></section>
+
+        <section>
+            <div class="calc-button-row">
+                <button class="calc-button double" id="c" onclick="restart()" ">C</button>
+                <button class="calc-button " id="arrow ">&larr;</button>
+                <button class="calc-button " id="divide " onclick="doDiv() ">&divide;</button>
+            </div>
+            <div class="calc-button-row ">
+                <button class="calc-button " id="seven " onclick="add7() ">7</button>
+                <button class="calc-button " id="eight " onclick="add8() ">8</button>
+                <button class="calc-button " id="nine " onclick="add9() ">9</button>
+                <button class="calc-button " id="times "onclick="doMult() ">&times;</button>
+            </div>
+            <div class="calc-button-row ">
+                <button class="calc-button " id="four " onclick="add4() ">4</button>
+                <button class="calc-button " id="five " onclick="add5() ">5</button>
+                <button class="calc-button " id="six " onclick="add6() ">6</button>
+                <button class="calc-button " id="minus "onclick="doSub() ">&minus;</button>
+            </div>
+            <div class="calc-button-row ">
+                <button class="calc-button " id="one " onclick="add1() ">1</button>
+                <button class="calc-button " id="two " onclick="add2() ">2</button>
+                <button class="calc-button " id="three " onclick="add3() ">3</button>
+                <button class="calc-button " id="plus " onclick="doSum() " >&plus;</button>
+            </div>
+            <div class="calc-button-row ">
+                <button class="calc-button triple " id="zero "onclick="add0() ">0</button>
+                <button class="calc-button " id="equals " onclick="doit() ">&equals;</button>
+            </div>
+
+        </section>
+    </div>
+    <script src="calculatorapp.js "></script>
+</body>
+
+</html>

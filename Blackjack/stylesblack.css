@@ -1,0 +1,38 @@
+html{
+    background-image: url("images/table.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: goldenrod;
+    padding-bottom: 40px;
+}
+
+p {
+    color: white;
+    font-weight: 1000;
+}
+
+#message-welcome {
+    font-style: italic;
+    font-weight: bold;
+}
+
+button {
+    color: rgb(22, 113, 22);
+    width: 300px;
+    height: 60px;
+    background: goldenrod;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px 0;
+}

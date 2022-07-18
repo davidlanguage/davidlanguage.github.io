@@ -23,21 +23,79 @@ let player = {
         Chips = Chips
     }
 }*/
-let changeplayer = true;
 let allCards = []
 let handCards = 0
+let allCardsDealer = 0
+let card1Dealer = 0
+let card2Dealer = 0
+let card3Dealer = 0
 let hasBlackJack = false
 let isAlive = false
 let message = ""
 let messageWelcome = document.getElementById("message-welcome")
+let end = document.getElementById("result")
 let sumCards = document.getElementById("sumcards")
 let cardValue = document.getElementById("cardvalue")
 
 let player1ID = document.getElementById("player1")
 player1ID.textContent = player.Name + ": $" +player.Chips
 let player2ID = document.getElementById("player2")
-player2ID.textContent = player2.Name + ": $" +player2.Chips
+player2ID.textContent = "Dealer cards: " +0
 
+function Stay(){
+   // end.textContent = "asdadsads"
+    if(card1Dealer<10){
+        card2Dealer = getRandomCard()
+        card3Dealer = getRandomCard()
+            player2ID.textContent = "Dealer cards: "+ card1Dealer+ " " +card2Dealer +" "+card3Dealer
+            allCardsDealer = card1Dealer+card2Dealer+card3Dealer
+    }
+    else{
+        card2Dealer = getRandomCard()
+        player2ID.textContent = "Dealer cards: "+ card1Dealer+ " " +card2Dealer
+        allCardsDealer =+ card2Dealer
+    }
+    Winner()
+    Restart()
+    
+}
+function Winner(){
+    /*let valorTotal;
+
+    for(let i;i<allCards.length;i++){
+    valorTotal = valorTotal+allCards[i]
+    }*/
+    
+    if (handCards > 21) {
+        end.textContent = "You lose!"
+    }
+    else if (allCardsDealer > 21) {
+        player.Chips = player.Chips +20;
+        end.textContent = "You won!"
+    }
+    else if (handCards === allCardsDealer) {
+        player.Chips = player.Chips +10;
+        end.textContent = "Tie!"
+    }
+    else if (handCards> allCardsDealer) {
+        player.Chips = player.Chips +20;
+        end.textContent = "You won!"
+    }
+    else if (handCards < allCardsDealer) {
+        end.textContent = "You lose!"
+    }
+}
+function Restart(){
+    allCards = 0
+    handCards = 0
+    allCardsDealer = 0
+    card1Dealer = 0
+    card2Dealer = 0
+    card3Dealer =0
+    hasBlackJack = false
+    isAlive = false
+    message = ""
+}
 function getRandomCard() {
     let num = Math.ceil(Math.random() * 13);
     if (num === 1) {
@@ -49,14 +107,19 @@ function getRandomCard() {
     return num
 }
 
+
 function startGame() {
+    end.textContent =""
     isAlive = true;
+    hasBlackJack = false;
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     allCards = [firstCard, secondCard]
     handCards = firstCard + secondCard
+    card1Dealer = getRandomCard()
     player.Chips = player.Chips -10
     player1ID.textContent = player.Name + ": $" +player.Chips
+    player2ID.textContent = "Dealer cards: " +card1Dealer
     play()
 }
 
@@ -72,7 +135,6 @@ function play() {
     } else if (handCards === 21) {
         message = "Blackjack!"
         hasBlackJack = true
-        player.Chips = player.Chips +50
     } else {
         message = "More than 21 points, sorry pal"
         isAlive = false

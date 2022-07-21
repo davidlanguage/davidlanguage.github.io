@@ -53,7 +53,7 @@ function Stay(){
     else{
         card2Dealer = getRandomCard()
         player2ID.textContent = "Dealer cards: "+ card1Dealer+ " " +card2Dealer
-        allCardsDealer =+ card2Dealer
+        allCardsDealer = card1Dealer+card2Dealer+card3Dealer
     }
     Winner()
     Restart()
